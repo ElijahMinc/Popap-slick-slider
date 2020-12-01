@@ -5,8 +5,8 @@ $(document).ready(function(){
 	  	slidesToShow: 1,
 	  	slidesToScroll: 1,
 	  	arrows: true,
-	  	speed: 850,
-
+	  	speed: 1500,
+	  	centerMode:true,
 
 
 	});

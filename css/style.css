@@ -27,10 +27,8 @@ body{
 }
 .link-box {
 	text-align: center;
-	margin: 0 20px;
 	border: none;
 	outline: none;
-
 }
 .header-box {
 		border: 2px solid;
@@ -72,10 +70,8 @@ body{
 	height: 100%;
 	right: 0;
 	top: 0;
-
 	transform: translateX(100%);
 	transition: all 0.5s;
-	overflow: hidden;
 
 	background-color: #F08080;
 
@@ -98,6 +94,9 @@ body{
 .popap-btn:target{
 	transform: translateX(0);
 }
+.slick-cloned{
+
+}
 .box1{
 
 }
@@ -116,7 +115,9 @@ body{
 	display: flex;
 	justify-content: center;
 }
-.slider-slick{
+.slick-slide{
+	opacity: 0;
+	transition: all 1s;
 
 }
 .slick-track.slick-next{
@@ -149,11 +150,15 @@ body{
 	content: '\f060';
 	position: absolute;
 	top: 50%;
-	right: 0;
+	right: 100%;
 	font-family: 'Font Awesome 5 Free', 'Font Awesome 5 Brands';
 	font-weight: 900;
 	font-size: 30px;
 
+}
+.slick-active{
+	opacity: 1;
+	transition: all 0.8s;
 }
 .slick-list{
 	overflow: hidden;
